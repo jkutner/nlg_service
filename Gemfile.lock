@@ -40,6 +40,7 @@ GEM
     builder (3.2.2)
     coderay (1.1.1)
     concurrent-ruby (1.0.2-java)
+    dalli (2.7.6)
     erubis (2.7.0)
     ffi (1.9.14-java)
     globalid (0.3.7)
@@ -126,6 +127,7 @@ PLATFORMS
   java
 
 DEPENDENCIES
+  dalli
   jruby-openssl
   pry-rails
   puma
