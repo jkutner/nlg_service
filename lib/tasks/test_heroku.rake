@@ -4,7 +4,7 @@ task test_heroku: :environment do
   require "uri"
 
   domain = ENV['HEROKU'] || "nlg-service.herokuapp.com"
-  uri = URI.parse("https://#{domain}/api/realiser")
+  uri = URI.parse("http://#{domain}/api/realiser")
 
   xml_test = File.read(Rails.root.join("test/fixtures/appositive_payload.xml"))
   response = Net::HTTP.post_form(uri, {"xml" => xml_test})
