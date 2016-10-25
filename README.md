@@ -18,12 +18,16 @@ So, instead of rewriting the damn thing, I decided to wrap it around a thin rail
 
 This project should be able to load on Heroku without any problems like this:
 
-  heroku create your-nlg-service
-  git push heroku master
+```
+heroku create your-nlg-service
+git push heroku master
+```
 
 Now you can test it out like this:
 
-  rake test_heroku HEROKU=your-nlg-service.herokuapp.com
+```
+rake test_heroku HEROKU=your-nlg-service.herokuapp.com
+```
 
 You can contribute sending Pull Requests or opening Issues.
 

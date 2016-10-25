@@ -12,7 +12,11 @@ group :development do
   gem 'pry-rails'
 end
 
-
+group :production do
+  gem 'rails_12factor'
+  gem 'rack-attack'
+  gem 'rack-cache'
+end
 
 gem 'jruby-openssl'
 
