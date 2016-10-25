@@ -1,15 +1,12 @@
 require 'java'
 
-class Api::RealiserController < ApplicationController
-  def realise
+class Api::RealisersController < ApplicationController
+  def create
     reader = java::io::StringReader.new(params[:xml])
     begin
       records = SimpleNLG::XMLRealiser.getRecording(reader)
-      output = []
-      if records.getRecord.size > 0
-        records.getRecord.each do |record|
-          output << SimpleNLG::XMLRealiser.realise(record&.getDocument)
-        end
+      output = records.getRecord.map do |record|
+        SimpleNLG::XMLRealiser.realise(record&.getDocument)
       end
       @realisation = output.join("\n").strip
       render plain: @realisation

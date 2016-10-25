@@ -7,7 +7,10 @@ gem 'rails', '4.2.7.1'
 
 gem 'rails-api'
 
-gem 'spring', :group => :development
+group :development do
+  gem 'spring'
+  gem 'pry-rails'
+end
 
 
 

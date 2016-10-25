@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   namespace :api do
-    post 'realiser/realise'
+    resource :realiser
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
