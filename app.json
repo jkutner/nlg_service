@@ -1,5 +1,5 @@
 {
-  "name": "Natural Language Generator Service",
+  "name": "Natural Language Generator",
   "description": "A thin JRuby rails-api layer for SimpleNLG",
   "repository": "https://github.com/jkutner/nlg_service",
   "keywords": ["jruby", "nlg", "rails"]
