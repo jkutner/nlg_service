@@ -1,0 +1,5 @@
+{
+  "name": "Natural Language Generator Service",
+  "description": "A thin JRuby rails-api layer for SimpleNLG",
+  "keywords": ["jruby", "nlg", "rails"]
+}

@@ -12,6 +12,8 @@ This lexicon database is a binary dump of HSQLDB, which is a Java-only database 
 
 This current version is just using the smaller 'default_lexicon.xml', but if I ever want to use the more complete NIH database, it would a big hassle.
 
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
 ## JRUBY
 
 So, instead of rewriting the damn thing, I decided to wrap it around a thin rails-api layer and load it with JRUBY 9.1.5.0.
